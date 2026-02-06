@@ -8,6 +8,7 @@ DATABASE_URL="sqlite:///./test.db"
 
 def get_db():
     db = create_engine(DATABASE_URL)
+    Session
     try:
         yield db
     finally:
