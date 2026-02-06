@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from routes.user_routes import router as user_router
 from sqlalchemy import create_engine
-from db import get_db
+from db import get_db,DATABASE_URL
 import os
 from models import Base
 app = FastAPI()
