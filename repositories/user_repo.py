@@ -2,7 +2,7 @@ from models import User
 from sqlalchemy.orm import Session
 
 class UserRepo:
-    def __int__(self,db:Session):
+    def __init__(self,db:Session):
         self.db = db
     
     def add_user(self,user:User):
